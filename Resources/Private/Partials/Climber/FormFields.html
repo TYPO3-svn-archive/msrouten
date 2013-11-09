@@ -1,0 +1,12 @@
+<label for="climberName">
+	<f:translate key="tx_msrouten_domain_model_climber.climber_name" />
+</label><br />
+	<f:form.textfield property="climberName" /><br />
+<label for="climberForename">
+	<f:translate key="tx_msrouten_domain_model_climber.climber_forename" />
+</label><br />
+	<f:form.textfield property="climberForename" /><br />
+<label for="climberBirthday">
+	<f:translate key="tx_msrouten_domain_model_climber.climber_birthday" />
+</label><br />
+	<f:form.textfield property="climberBirthday"  value="{climber.climberBirthday->f:format.date()}" /><br />

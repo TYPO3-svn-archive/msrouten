@@ -1,0 +1,44 @@
+<f:layout name="Default" />
+
+This Template is responsible for creating a table of domain objects.
+
+If you modify this template, do not forget to change the overwrite settings
+in /Configuration/ExtensionBuilder/settings.yaml:
+  Resources:
+    Private:
+      Templates:
+        List.html: keep
+
+Otherwise your changes will be overwritten the next time you save the extension in the extension builder
+
+<f:section name="main">
+<h1>Listing for Guide</h1>
+
+<f:flashMessages />
+
+<table  class="tx_msrouten" >
+	<tr>
+		<th><f:translate key="tx_msrouten_domain_model_guide.guide_name" /></th>
+		<th><f:translate key="tx_msrouten_domain_model_guide.guide_description" /></th>
+		<th><f:translate key="tx_msrouten_domain_model_guide.guide_author" /></th>
+		<th><f:translate key="tx_msrouten_domain_model_guide.guide_i_s_b_n" /></th>
+		<th><f:translate key="tx_msrouten_domain_model_guide.guide_price" /></th>
+		<th> </th>
+		<th> </th>
+	</tr>
+
+	<f:for each="{guides}" as="guide">
+		<tr>
+			<td><f:link.action action="show" arguments="{guide : guide}"> {guide.guideName}</f:link.action></td>
+			<td><f:link.action action="show" arguments="{guide : guide}"> {guide.guideDescription}</f:link.action></td>
+			<td><f:link.action action="show" arguments="{guide : guide}"> {guide.guideAuthor}</f:link.action></td>
+			<td><f:link.action action="show" arguments="{guide : guide}"> {guide.guideISBN}</f:link.action></td>
+			<td><f:link.action action="show" arguments="{guide : guide}"> {guide.guidePrice}</f:link.action></td>
+			<td><f:link.action action="edit" arguments="{guide : guide}">Edit</f:link.action></td>
+			<td><f:link.action action="delete" arguments="{guide : guide}">Delete</f:link.action></td>
+		</tr>
+	</f:for>
+</table>
+
+<f:link.action action="new">New Guide</f:link.action>
+</f:section>

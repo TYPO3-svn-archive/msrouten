@@ -1,0 +1,45 @@
+<f:layout name="Default" />
+
+This Template is responsible for creating a table of domain objects.
+
+If you modify this template, do not forget to change the overwrite settings
+in /Configuration/ExtensionBuilder/settings.yaml:
+  Resources:
+    Private:
+      Templates:
+        List.html: keep
+
+Otherwise your changes will be overwritten the next time you save the extension in the extension builder
+
+<f:section name="main">
+<h2>Übersicht über alle Kletterrouten</h2>
+
+<f:flashMessages />
+
+<table  class="tx_msrouten" >
+	<tr>
+		<th><f:translate key="tx_msrouten_domain_model_routes.routen_name" /></th>
+		<th>E-Bew. </th>
+		<th>Schönh. </th>	
+		<th>Beg. </th>
+		<th><f:translate key="tx_msrouten_domain_model_routes.level" /></th>
+	
+		
+	</tr>
+
+	<f:for each="{routess}" as="routes">
+		<tr>
+			<td rowspan="2"><f:link.action  arguments="{routes : routes}" pageUid="{singlePID}" > {routes.routenName} (<f:translate key="tx_msrouten_domain_model_routes.levelshort{routes.levelShort}" />{routes.alevel})</f:link.action> </td>
+			<td> {routes.elevel}</td>
+			<td> {routes.beauty}</td>
+			<td> {routes.frequenz}</td>
+			<td> {routes.level}</td> </tr>
+			<tr>
+			<td><b>Länge:</b> {routes.climbdistance}</td>
+			<td><b>Zeit:</b> {routes.climbtime}</td>
+			<td><b>Expos.:</b> {routes.exposition}</td>
+			<td><b>Ebg.:</b> {routes.erstbegeher}</td>
+		</tr>
+	</f:for>
+</table>
+</f:section>

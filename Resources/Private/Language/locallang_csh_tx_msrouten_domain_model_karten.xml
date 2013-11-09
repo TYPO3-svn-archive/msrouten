@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<T3locallang>
+	<meta type="array">
+		<description>Context Sensitive Help (CSH) for table tx_msrouten_domain_model_karten</description>
+		<type>CSH</type>
+		<csh_table>tx_msrouten_domain_model_karten</csh_table>
+	</meta>
+	<data type="array">
+	<languageKey index="default" type="array">
+	   
+			<label index="karten_name.description">Karten Bezeichnung</label>
+			<label index="nummer.description">VerlagsNummer</label>
+			<label index="massstab.description">Maßstab</label>
+			<label index="land.description">Land</label>
+			<label index="isbn13.description">ISBN-13 Nummer</label>
+			<label index="asin.description">Amazon-ASIN, bzw. ISBN 10</label>
+			<label index="stand.description">Bearbeitungsstand</label>
+			<label index="zone.description">UTM-Zone</label>
+			<label index="li_unten_utm_rechts.description">Eckkoordinaten links unten, Rechtswert</label>
+			<label index="uli_unten_utm_hoch.description">Eckkoordinaten links unten, Hochwert</label>
+			<label index="li_oben_utm_rechts.description">Eckkoordinaten links oben, Rechtswert</label>
+			<label index="li_oben_utm_hoch.description">Eckkoordinaten links oben, Hochwert</label>
+			<label index="re_oben_utm_rechts.description">Eckkoordinaten rechts oben, Rechtswert</label>
+			<label index="re_oben_utm_hoch.description">Eckkoordinaten rechts oben, Hochwert</label>
+			<label index="re_unten_utm_rechts.description">Eckkoordinaten rechts unten, Rechtswert</label>
+			<label index="re_unten_utm_hoch.description">Eckkoordinaten rechts unten, Hochwert</label>
+			<label index="zone2.description">Rückseite Zone</label>
+			<label index="li_unten_utm_rechts2.description">Rückseite Eckkoordinaten links unten, Rechtswert</label>
+			<label index="li_unten_utm_hoch2.description">Rückseite Eckkoordinaten links unten, Hochwert</label>
+			<label index="li_oben_utm_rechts2.description">Rückseite Eckkoordinaten links oben, Rechtswert</label>
+			<label index="li_oben_utm_hoch2.description">Rückseite Eckkoordinaten links oben, Hochwert</label>
+			<label index="re_oben_utm_rechts2.description">Rückseite Eckkoordinaten rechts oben, Rechtswert</label>
+			<label index="re_oben_utm_hoch2.description">Rückseite Eckkoordinaten rechts oben, Hochwert</label>
+			<label index="re_unten_utm_rechts2.description">Rückseite Eckkoordinaten rechts unten, Rechtswert</label>
+			<label index="re_unten_utm_hoch2.description">Rückseite Eckkoordinaten rechts unten, Hochwert</label>
+		</languageKey>
+	</data>
+</T3locallang>

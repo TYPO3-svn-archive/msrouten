@@ -1,0 +1,89 @@
+<T3DataStructure>
+	<meta>
+		<langDisable>1</langDisable>
+	</meta>
+	<sheets>
+		<main>
+			<ROOT>
+				<TCEforms>
+					<sheetTitle>Einstellungen</sheetTitle>
+				</TCEforms>
+				<type>array</type>
+				<el>
+				
+		<switchableControllerActions>
+       <TCEforms>
+         <label>Wähle zu ladendende Funktionen:</label>
+         <onChange>reload</onChange>
+         
+         <config>
+          <type>select</type>
+          <items>
+            
+            <numIndex index="0">
+            	<numIndex index="0">Liste</numIndex>
+            	<numIndex index="1">Routes->list;</numIndex>
+            </numIndex>
+            
+            <numIndex index="1">
+            	<numIndex index="0">Details</numIndex>
+            	<numIndex index="1">Routes->show</numIndex>
+            </numIndex>
+            
+            
+           </items>
+         </config>
+       </TCEforms>
+      </switchableControllerActions>				
+	
+				
+				
+				
+					<settings.flexform.gebirge>
+						<TCEforms>
+							<exclude>1</exclude>
+							<label>Gebirge</label>
+							<config>
+								<type>input</type>
+								<size>5</size>
+							</config>
+						</TCEforms>
+					</settings.flexform.gebirge>
+				
+					<settings.flexform.mount>
+						<TCEforms>
+							<exclude>1</exclude>
+							<label>Berg</label>
+							<config>
+								<type>input</type>
+								<size>5</size>
+							</config>
+						</TCEforms>
+					</settings.flexform.mount>
+					<settings.flexform.walls>
+						<TCEforms>
+							<exclude>1</exclude>
+							<label>Wand</label>
+							<config>
+								<type>input</type>
+								<size>5</size>
+							</config>
+						</TCEforms>
+					</settings.flexform.walls>
+					<settings.flexform.singlePID>
+						<TCEforms>
+							<exclude>1</exclude>
+							<label>singlePID</label>
+							<config>
+								<type>input</type>
+								<size>5</size>
+							</config>
+						</TCEforms>
+					</settings.flexform.singlePID>
+					
+				</el>
+				
+			</ROOT>
+		</main>
+	</sheets>
+</T3DataStructure>

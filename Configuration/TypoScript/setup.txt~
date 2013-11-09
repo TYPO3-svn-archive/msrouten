@@ -1,0 +1,41 @@
+plugin.tx_msrouten {
+	view {
+		templateRootPath = {$plugin.tx_msrouten.view.templateRootPath}
+		partialRootPath = {$plugin.tx_msrouten.view.partialRootPath}
+		layoutRootPath = {$plugin.tx_msrouten.view.layoutRootPath}
+	}
+	persistence {
+		storagePid = {$plugin.tx_msrouten.persistence.storagePid}
+	}
+	features {
+		# uncomment the following line to enable the new Property Mapper.
+		# rewrittenPropertyMapper = 1
+	}
+}
+
+plugin.tx_msrouten._CSS_DEFAULT_STYLE (
+	input.f3-form-error {
+		background-color:#FF9F9F;
+		border: 1px #FF0000 solid;
+	}
+
+	.tx-msrouten table {
+		border-collapse:separate;
+		border-spacing:1px;
+		background-color:    #ddd;
+	}
+
+	.tx-msrouten table th {
+		font-weight:bold;
+		background-color:    #846439;
+  	color:               #F9F7F4; 
+  	font-weight:        bold;
+  	padding:		5px;
+	}
+
+	.tx-msrouten table td {
+		vertical-align:top;
+		background-color:    #fff;
+		padding:		3px;
+	}
+)

@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<T3locallang>
+	<meta type="array">
+		<type>database</type>
+		<description>Language labels for database tables/fields belonging to extension 'msrouten'</description>
+	</meta>
+	<data type="array">
+		<languageKey index="default" type="array">
+            
+			<label index="tx_msrouten_domain_model_routes">Routen</label>
+			<label index="tx_msrouten_domain_model_routes.routen_name">Routen Name</label>
+			<label index="tx_msrouten_domain_model_routes.level_short">Schwierigkeit kurz</label>
+			<label index="tx_msrouten_domain_model_routes.erstbegeher">Erstbegeher</label>
+			<label index="tx_msrouten_domain_model_routes.level">Schwierigkeitsverteilung</label>
+			<label index="tx_msrouten_domain_model_routes.alevel">A-Bewertung</label>
+			<label index="tx_msrouten_domain_model_routes.elevel">E-Bewertung</label>
+			<label index="tx_msrouten_domain_model_routes.climbtime">Kletterzeit</label>
+			<label index="tx_msrouten_domain_model_routes.climbdistance">Kletterlänge</label>
+			<label index="tx_msrouten_domain_model_routes.exposition">Exposition</label>
+			<label index="tx_msrouten_domain_model_routes.wandhoehe">Wandhoehe</label>
+			<label index="tx_msrouten_domain_model_routes.material">Material</label>
+			<label index="tx_msrouten_domain_model_routes.beauty">Schönheit</label>
+			<label index="tx_msrouten_domain_model_routes.frequenz">Frequenz</label>
+			<label index="tx_msrouten_domain_model_routes.route_description">Routencharakter</label>
+			<label index="tx_msrouten_domain_model_routes.level_long">Schwierigkeit-Text</label>
+			<label index="tx_msrouten_domain_model_routes.absicherung">Absicherung</label>
+			<label index="tx_msrouten_domain_model_routes.zustieg">Zustieg</label>
+			<label index="tx_msrouten_domain_model_routes.einstieg">Einstieg</label>
+			<label index="tx_msrouten_domain_model_routes.huette">Huette</label>
+			<label index="tx_msrouten_domain_model_routes.hints">Hinweise</label>
+			<label index="tx_msrouten_domain_model_routes.abstieg">Abstieg</label>
+			<label index="tx_msrouten_domain_model_routes.verlauf">Verlauf</label>
+			<label index="tx_msrouten_domain_model_routes.erstbegeher_lang">Erstbegeher Lang</label>
+			<label index="tx_msrouten_domain_model_routes.quelle">Info-Quelle</label>
+			<label index="tx_msrouten_domain_model_routes.topo">Topo</label>
+			<label index="tx_msrouten_domain_model_routes.topo_bu">Topo Bu</label>
+			<label index="tx_msrouten_domain_model_routes.topo_alt">Topo Alt</label>
+			<label index="tx_msrouten_domain_model_routes.topo_title">Topo Title</label>
+			<label index="tx_msrouten_domain_model_routes.wandbild">Wandbild</label>
+			<label index="tx_msrouten_domain_model_routes.wandbild_bu">Wandbild Bu</label>
+			<label index="tx_msrouten_domain_model_routes.wandbild_alt">Wandbild Alt</label>
+			<label index="tx_msrouten_domain_model_routes.wandbild_title">Wandbild Title</label>
+			<label index="tx_msrouten_domain_model_routes.action_bild1">Action Bild1</label>
+			<label index="tx_msrouten_domain_model_routes.action_bild1_bu">Action Bild1 Bu</label>
+			<label index="tx_msrouten_domain_model_routes.action_bild1_alt">Action Bild1 Alt</label>
+			<label index="tx_msrouten_domain_model_routes.actionbild1_title">Actionbild1 Title</label>
+			<label index="tx_msrouten_domain_model_routes.action_bild2">Action Bild2</label>
+			<label index="tx_msrouten_domain_model_routes.action_bild2_bu">Action Bild2 Bu</label>
+			<label index="tx_msrouten_domain_model_routes.action_bild2_alt">Action Bild2 Alt</label>
+			<label index="tx_msrouten_domain_model_routes.action_bild2_title">Action Bild2 Title</label>
+			<label index="tx_msrouten_domain_model_routes.action_bild3">Action Bild3</label>
+			<label index="tx_msrouten_domain_model_routes.action_bild3_bu">Action Bild3 Bu</label>
+			<label index="tx_msrouten_domain_model_routes.action_bild3_alt">Action Bild3 Alt</label>
+			<label index="tx_msrouten_domain_model_routes.action_bild3_title">Action Bild3 Title</label>
+			<label index="tx_msrouten_domain_model_routes.galerie">Galerie</label>
+			<label index="tx_msrouten_domain_model_routes.pdf">Pdf</label>
+			<label index="tx_msrouten_domain_model_routes.linkextern">Linkextern</label>
+			<label index="tx_msrouten_domain_model_routes.walls">Wand</label>
+			<label index="tx_msrouten_domain_model_routes.guide">Führer</label>
+
+			<label index="tx_msrouten_domain_model_mounts">Berg</label>
+			<label index="tx_msrouten_domain_model_mounts.mount_name">Bergname</label>
+			<label index="tx_msrouten_domain_model_mounts.mount_description">Bergbeschreibung</label>
+			<label index="tx_msrouten_domain_model_mounts.height">Höhe</label>
+			<label index="tx_msrouten_domain_model_mounts.mount_location_n">Koordinate N</label>
+			<label index="tx_msrouten_domain_model_mounts.mount_location_o">Koordinate O</label>
+			<label index="tx_msrouten_domain_model_mounts.mount_way_to_top">Normalweg</label>
+			<label index="tx_msrouten_domain_model_mounts.mount_way_to_bot">Abstieg</label>
+			<label index="tx_msrouten_domain_model_mounts.gebirge">Gebirge</label>
+			<label index="tx_msrouten_domain_model_mounts.karte">Karte</label>
+
+			<label index="tx_msrouten_domain_model_walls">Wand</label>
+			<label index="tx_msrouten_domain_model_walls.wall_name">Wandname</label>
+			<label index="tx_msrouten_domain_model_walls.wall_description">Wandbeschreibung</label>
+			<label index="tx_msrouten_domain_model_walls.wall_height">Wandhöhe</label>
+			<label index="tx_msrouten_domain_model_walls.wall_pictures">Wandbild</label>
+			<label index="tx_msrouten_domain_model_walls.mounts">Berg</label>
+
+			<label index="tx_msrouten_domain_model_pictures">Bilder</label>
+			<label index="tx_msrouten_domain_model_pictures.picture_wall">Wandbild</label>
+			<label index="tx_msrouten_domain_model_pictures.wall_pic_bu">Wandbild BU</label>
+			<label index="tx_msrouten_domain_model_pictures.wall_pic_alt">Wandbild Alt</label>
+			<label index="tx_msrouten_domain_model_pictures.wall_pic_title">Wandbild Title</label>
+
+			<label index="tx_msrouten_domain_model_guide">Führer</label>
+			<label index="tx_msrouten_domain_model_guide.guide_name">Führer Name</label>
+			<label index="tx_msrouten_domain_model_guide.guide_description">Führer Beschreibung</label>
+			<label index="tx_msrouten_domain_model_guide.guide_author">Guide Author</label>
+			<label index="tx_msrouten_domain_model_guide.guide_i_s_b_n">Guide I S B N</label>
+			<label index="tx_msrouten_domain_model_guide.guide_price">Guide Price</label>
+			<label index="tt_news.tx_extbase_type.Tx_Msrouten_Guide">MS Routen Guide</label>
+			
+			<label index="tx_msrouten_domain_model_karten">Karten</label>
+			<label index="tx_msrouten_domain_model_karten.karten_name">Karten Name</label>
+			<label index="tx_msrouten_domain_model_karten.nummer">Nummer</label>
+			<label index="tx_msrouten_domain_model_karten.massstab">Massstab</label>
+			<label index="tx_msrouten_domain_model_karten.land">Land</label>
+			<label index="tx_msrouten_domain_model_karten.isbn13">Isbn13</label>
+			<label index="tx_msrouten_domain_model_karten.asin">Asin</label>
+			<label index="tx_msrouten_domain_model_karten.stand">Stand</label>
+			<label index="tx_msrouten_domain_model_karten.zone">Zone</label>
+			<label index="tx_msrouten_domain_model_karten.li_unten_utm_rechts">Li Unten Utm Rechts</label>
+			<label index="tx_msrouten_domain_model_karten.uli_unten_utm_hoch">Uli Unten Utm Hoch</label>
+			<label index="tx_msrouten_domain_model_karten.li_oben_utm_rechts">Li Oben Utm Rechts</label>
+			<label index="tx_msrouten_domain_model_karten.li_oben_utm_hoch">Li Oben Utm Hoch</label>
+			<label index="tx_msrouten_domain_model_karten.re_oben_utm_rechts">Re Oben Utm Rechts</label>
+			<label index="tx_msrouten_domain_model_karten.re_oben_utm_hoch">Re Oben Utm Hoch</label>
+			<label index="tx_msrouten_domain_model_karten.re_unten_utm_rechts">Re Unten Utm Rechts</label>
+			<label index="tx_msrouten_domain_model_karten.re_unten_utm_hoch">Re Unten Utm Hoch</label>
+			<label index="tx_msrouten_domain_model_karten.zone2">Zone2</label>
+			<label index="tx_msrouten_domain_model_karten.li_unten_utm_rechts2">Li Unten Utm Rechts2</label>
+			<label index="tx_msrouten_domain_model_karten.li_unten_utm_hoch2">Li Unten Utm Hoch2</label>
+			<label index="tx_msrouten_domain_model_karten.li_oben_utm_rechts2">Li Oben Utm Rechts2</label>
+			<label index="tx_msrouten_domain_model_karten.li_oben_utm_hoch2">Li Oben Utm Hoch2</label>
+			<label index="tx_msrouten_domain_model_karten.re_oben_utm_rechts2">Re Oben Utm Rechts2</label>
+			<label index="tx_msrouten_domain_model_karten.re_oben_utm_hoch2">Re Oben Utm Hoch2</label>
+			<label index="tx_msrouten_domain_model_karten.re_unten_utm_rechts2">Re Unten Utm Rechts2</label>
+			<label index="tx_msrouten_domain_model_karten.re_unten_utm_hoch2">Re Unten Utm Hoch2</label>
+
+			<label index="tx_msrouten_domain_model_gebirge">Gebirge</label>
+			<label index="tx_msrouten_domain_model_gebirge.gebirge">Gebirge</label>
+
+		</languageKey>
+	</data>
+</T3locallang>

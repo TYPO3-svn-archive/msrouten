@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<T3locallang>
+	<meta type="array">
+		<description>Context Sensitive Help (CSH) for table tx_msrouten_domain_model_pictures</description>
+		<type>CSH</type>
+		<csh_table>tx_msrouten_domain_model_pictures</csh_table>
+	</meta>
+	<data type="array">
+	<languageKey index="default" type="array">
+	   
+			<label index="picture_wall.description">Bild der Wand</label>
+			<label index="wall_pic_bu.description">Bildunterschrift Wandbild</label>
+			<label index="wall_pic_alt.description">Alt-Text Wandbild</label>
+			<label index="wall_pic_title.description">TitleText Wandbild</label>
+		</languageKey>
+	</data>
+</T3locallang>

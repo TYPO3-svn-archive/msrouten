@@ -1,0 +1,23 @@
+plugin.tx_msrouten {
+	view {
+		# cat=plugin.tx_msrouten/file; type=string; label=Path to template root (FE)
+		templateRootPath = EXT:msrouten/Resources/Private/Templates/
+		# cat=plugin.tx_msrouten/file; type=string; label=Path to template partials (FE)
+		partialRootPath = EXT:msrouten/Resources/Private/Partials/
+		# cat=plugin.tx_msrouten/file; type=string; label=Path to template layouts (FE)
+		layoutRootPath = EXT:msrouten/Resources/Private/Layouts/
+		
+		
+		
+	}
+	persistence {
+		# cat=plugin.tx_msrouten//a; type=string; label=Default storage PID
+		storagePid = 
+	}
+   features {
+        skipDefaultArguments = 1
+    }
+	
+	
+	
+}

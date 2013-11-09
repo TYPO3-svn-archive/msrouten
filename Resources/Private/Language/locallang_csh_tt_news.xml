@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<T3locallang>
+	<meta type="array">
+		<description>Context Sensitive Help (CSH) for table tt_news</description>
+		<type>CSH</type>
+		<csh_table>tt_news</csh_table>
+	</meta>
+	<data type="array">
+	<languageKey index="default" type="array">
+	   
+			<label index="guide_name.description">Name führer</label>
+			<label index="guide_description.description">guideDescription</label>
+			<label index="guide_author.description">Autor</label>
+			<label index="guide_i_s_b_n.description">guideISBN</label>
+			<label index="guide_price.description">guidePrice</label>
+		</languageKey>
+	</data>
+</T3locallang>

@@ -1,0 +1,334 @@
+{namespace pdf=Tx_Dompdf_ViewHelpers}
+<pdf:Pdf debug="1">
+<body>
+<header>
+<style>
+@page {
+  margin: 0;
+}
+ body{
+  padding:0;
+  margin: 150px 0px 100px 0px;
+  width:800px;
+  font-family: verdana,Helvetica,Arial;
+}
+
+html{
+  margin:0;padding:0;width:800px;
+ }
+div.header,
+div.footer {
+  position: fixed;
+  background: transparent;
+  width: 100%;
+  border: 0px solid #888;
+  overflow: hidden;
+  padding:0;
+}
+
+div.header {
+  top: 0cm;
+  left: 0cm;
+  height: 155px;
+}
+
+div.footer {
+  bottom: 0cm;
+	left: 0cm;
+  border-top-width: 0;
+  height: 100px;
+}
+table{
+	width:780px; 
+	text-align:left; 
+	table-layout: fixed;
+	margin: 0px 10px 0px 10px;
+}
+
+th{
+	background: #5290cc;
+	color: white;
+}
+h1,h2,h3{
+	text-align: center;
+}
+
+</style>
+
+</header>
+
+<html>
+<div class="header">
+
+<f:image src="fileadmin/images/1_klettern_icon.png" width="35" height="35" alt="Kletterroute" />
+<h2>Klettern</h2>
+</div>
+<div class="footer">
+
+</div>
+<h2>  {veranstaltung.titel}  ({veranstaltung.interneid})</h2>
+<h3>{veranstaltung.untertitel} </h3>
+
+<h3>{routes.walls.mounts.gebirge.gebirge} > {routes.walls.mounts.mountName} > {routes.walls.wallName} </h3></br>
+
+<table class="tx-msrouten" width="600px" >
+	<tr >
+		<th colspan="8"><h1>{routes.routenName}</h1></th>
+	</tr>	
+	<tr>
+		<th align="center">
+			Bew.
+		</th>
+		<th align="center">
+			E-Grad
+		</th>
+		<th align="center">
+			Zeit
+		</th>
+		<th align="center">
+			Länge
+		</th>
+		<th align="center">
+			Wandh.
+		</th>
+		<th align="center">
+			Expos.
+		</th>
+		<th align="center">
+			Schön
+		</th>
+		<th align="center">
+			Beg.
+		</th>
+	</tr> 
+	<tr>
+		<td align="center">
+			<f:translate key="tx_msrouten_domain_model_routes.levelshort{routes.levelShort}" /> {routes.alevel}
+		</td>
+		<td align="center">
+			{routes.elevel}
+		</td>
+		<td align="center">
+			{routes.climbtime}
+		</td>
+		<td align="center">
+			{routes.climbdistance}
+		</td>
+		<td align="center">
+			{routes.wandhoehe}
+		</td>
+		<td align="center">
+			{routes.exposition}
+		</td>
+		<td align="center">
+			{routes.beauty}
+		</td>
+		<td align="center">
+			{routes.frequenz}
+		</td>
+	</tr>
+</table>
+</br>
+<table class="tx-msrouten" width="600px" >
+		<tr>
+		<th>
+			<f:translate key="tx_msrouten_domain_model_routes.route_description" />
+		</th>
+		<td>
+			<f:format.html>{routes.routeDescription}</f:format.html>	
+		</td>
+	</tr>
+	<tr>
+		<th>
+			<f:translate key="tx_msrouten_domain_model_routes.erstbegeher_lang" />
+		</th>
+		<td>
+			<f:format.html>{routes.erstbegeherLang}</f:format.html>	
+		</td>
+	</tr>
+	<tr>
+		<th>
+			<f:translate key="tx_msrouten_domain_model_routes.level_long" />
+		</th>
+		<td>
+			<f:format.html>{routes.levelLong}</f:format.html>
+		</td>
+	</tr>
+	<tr>
+		<th>
+			<f:translate key="tx_msrouten_domain_model_routes.absicherung" />
+		</th>
+		<td>
+			<f:format.html>{routes.absicherung}</f:format.html>
+		</td>
+	</tr>
+	<tr>
+		<th>
+			<f:translate key="tx_msrouten_domain_model_routes.material" />
+		</th>
+		<td>
+			<f:format.html>{routes.material}</f:format.html>
+		</td>
+	</tr>
+	<tr>
+		<th>
+			<f:translate key="tx_msrouten_domain_model_routes.zustieg" />
+		</th>
+		<td>
+			<f:format.html>{routes.zustieg}</f:format.html>
+		</td>
+	</tr>
+	<tr>
+		<th>
+			<f:translate key="tx_msrouten_domain_model_routes.einstieg" />
+		</th>
+		<td>
+			<f:format.html>{routes.einstieg}</f:format.html>
+		</td>
+	</tr>
+	<tr>
+		<th>
+			<f:translate key="tx_msrouten_domain_model_routes.verlauf" />
+		</th>
+		<td>
+			<f:format.html>{routes.verlauf}</f:format.html>
+		</td>
+	</tr>
+	<tr>
+		<th>
+			<f:translate key="tx_msrouten_domain_model_routes.abstieg" />
+		</th>
+		<td>
+			<f:format.html>{routes.abstieg}</f:format.html>
+		</td>
+	</tr>
+	<tr>
+		<th>
+			<f:translate key="tx_msrouten_domain_model_routes.huette" />
+		</th>
+		<td>
+			<f:format.html>{routes.huette}</f:format.html>
+		</td>
+	</tr>
+	<tr>
+		<th>
+			<f:translate key="tx_msrouten_domain_model_routes.hints" />
+		</th>
+		<td>
+			<f:format.html>{routes.hints}</f:format.html>
+		</td>
+	</tr>
+	<tr>
+		<th>
+			<f:translate key="tx_msrouten_domain_model_routes.quelle" />
+		</th>
+		<td>
+			<f:format.html>{routes.quelle}</f:format.html>
+		</td>
+	</tr>
+</table>
+	</br>
+<table class="tx-msrouten" width="600px" >
+	<tr>
+		<th align="center"><h2><f:translate key="tx_msrouten_domain_model_routes.topo" /></h2></th>
+	</tr>
+	<tr>
+		<td align="center">	
+			<f:if condition="{routes.topo}">
+			  <f:then>
+			     <f:format.html><img clickenlarge=1"  src="uploads/tx_msrouten/{routes.topo}" width="595" alt="{routes.topoAlt}"  title="{routes.topoTitle}" /></f:format.html>
+			<f:format.html>{routes.topoBu}</f:format.html>
+			  </f:then>
+			  <f:else><f:format.html>{routes.topoBu}</f:format.html>
+ 			 </f:else>
+			</f:if>
+		</td>
+	</tr>
+</table>
+</br>	
+<table class="tx-msrouten" width="600px" >
+	<tr >
+		<th align="center"><h2><f:translate key="tx_msrouten_domain_model_routes.wandbild" /></h2></th>
+	</tr>
+	<tr >	<td align="center">	
+			<f:if condition="{routes.wandbild}">
+			  <f:then>
+			    <f:format.html><img clickenlarge=1" src="uploads/tx_msrouten/{routes.wandbild}" width="595" alt="{routes.wandbildAlt}"  title="{routes.wandbildTitle}" /></f:format.html>
+			<f:format.html>{routes.wandbildBu}</f:format.html>
+			  </f:then>
+			  <f:else><f:format.html><em> Derzeit kein Wandbild verfügbar.</em></f:format.html>
+ 			 </f:else>
+			</f:if>
+		</td>
+	</tr>
+</table>
+</br>	
+<table class="tx-msrouten" width="600px" >
+	<tr >
+		<th align="center"><h2>Weitere Fotos von der Route</h2></th>
+	</tr>
+	<tr>
+		<td align="center">
+			<f:if condition="{routes.actionBild1}">
+			  <f:then>
+			     <f:format.html><img clickenlarge=1" src="uploads/tx_msrouten/{routes.actionBild1}" width="595" alt="{routes.actionBild1Alt}"  title="{routes.actionBild1Title}" /></f:format.html>
+			<f:format.html>{routes.actionBild1Bu}</f:format.html>
+			  </f:then>
+			  <f:else><f:format.html><em>Keine Bilder vorhanden</em></f:format.html>
+ 			 </f:else>
+			</f:if>
+			 </br>
+			<f:if condition="{routes.actionBild2}">
+			  <f:then>
+			      <f:format.html><img clickenlarge=1" src="uploads/tx_msrouten/{routes.actionBild2}" width="595" alt="{routes.actionBild2Alt}"  title="{routes.actionBild2Title}" /></f:format.html>
+			<f:format.html>{routes.actionBild2Bu}</f:format.html>
+			  </f:then>
+			  <f:else><f:format.html></f:format.html>
+ 			 </f:else>
+			</f:if>
+			</br>
+			<f:if condition="{routes.actionBild3}">
+			  <f:then>
+			      <f:format.html><img clickenlarge=1" src="uploads/tx_msrouten/{routes.actionBild3}" width="595" alt="{routes.actionBild3Alt}"  title="{routes.actionBild3Title}" /></f:format.html>
+			<f:format.html>{routes.actionBild3Bu}</f:format.html>
+			  </f:then>
+			  <f:else><f:format.html></f:format.html>
+ 			 </f:else>
+			</f:if>
+		</td>
+	</tr>
+	</table>
+</br>	
+<table class="tx-msrouten" width="600px" >
+	<tr >
+		<th colspan="2"><h2>Sonstiges</h2></th>
+	</tr>
+	<tr>
+		<th>
+			<f:translate key="tx_msrouten_domain_model_routes.pdf" />
+		</th>
+		<td> 		
+			<f:if condition="{routes.pdf}" >
+			<f:then>
+			 	<f:link.page pageUid="1518"  >Generate PDF</f:link.page>
+			</f:then>
+			<f:else>
+				 	<f:link.action action="show"  arguments="{routes:routes, pdf : 1}">Generate PDF</f:link.action>
+			</f:else>
+			</f:if>
+		</td>
+    </div>
+			
+		</td>
+	</tr>
+	<tr>
+		<th>
+			<f:translate key="tx_msrouten_domain_model_routes.linkextern" />
+		</th>
+		<td><f:format.html>{routes.linkextern}</f:format.html>			
+		</td>
+	</tr>
+</table>
+</html>
+</body>
+</pdf:Pdf>

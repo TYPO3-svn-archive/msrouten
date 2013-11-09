@@ -1,0 +1,14 @@
+config.tx_extbase{
+    persistence{
+        classes{
+
+            Tx_Msrouten_Domain_Model_Guide {
+                mapping {
+                    tableName = tt_news
+                    recordType = Tx_Msrouten_Guide
+                }
+            }
+            
+    	}
+    }
+}

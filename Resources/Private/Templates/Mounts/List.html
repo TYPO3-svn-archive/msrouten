@@ -1,0 +1,48 @@
+<f:layout name="Default" />
+
+This Template is responsible for creating a table of domain objects.
+
+If you modify this template, do not forget to change the overwrite settings
+in /Configuration/ExtensionBuilder/settings.yaml:
+  Resources:
+    Private:
+      Templates:
+        List.html: keep
+
+Otherwise your changes will be overwritten the next time you save the extension in the extension builder
+
+<f:section name="main">
+<h1>Listing for Mounts</h1>
+
+<f:flashMessages />
+
+<table  class="tx_msrouten" >
+	<tr>
+		<th><f:translate key="tx_msrouten_domain_model_mounts.mount_name" /></th>
+		<th><f:translate key="tx_msrouten_domain_model_mounts.mount_description" /></th>
+		<th><f:translate key="tx_msrouten_domain_model_mounts.height" /></th>
+		<th><f:translate key="tx_msrouten_domain_model_mounts.mount_location_n" /></th>
+		<th><f:translate key="tx_msrouten_domain_model_mounts.mount_location_o" /></th>
+		<th><f:translate key="tx_msrouten_domain_model_mounts.mount_way_to_top" /></th>
+		<th><f:translate key="tx_msrouten_domain_model_mounts.mount_way_to_bot" /></th>
+		<th> </th>
+		<th> </th>
+	</tr>
+
+	<f:for each="{mountss}" as="mounts">
+		<tr>
+			<td><f:link.action action="show" arguments="{mounts : mounts}"> {mounts.mountName}</f:link.action></td>
+			<td><f:link.action action="show" arguments="{mounts : mounts}"> {mounts.mountDescription}</f:link.action></td>
+			<td><f:link.action action="show" arguments="{mounts : mounts}"> {mounts.height}</f:link.action></td>
+			<td><f:link.action action="show" arguments="{mounts : mounts}"> {mounts.mountLocationN}</f:link.action></td>
+			<td><f:link.action action="show" arguments="{mounts : mounts}"> {mounts.mountLocationO}</f:link.action></td>
+			<td><f:link.action action="show" arguments="{mounts : mounts}"> {mounts.mountWayToTop}</f:link.action></td>
+			<td><f:link.action action="show" arguments="{mounts : mounts}"> {mounts.mountWayToBot}</f:link.action></td>
+			<td><f:link.action action="edit" arguments="{mounts : mounts}">Edit</f:link.action></td>
+			<td><f:link.action action="delete" arguments="{mounts : mounts}">Delete</f:link.action></td>
+		</tr>
+	</f:for>
+</table>
+
+<f:link.action action="new">New Mounts</f:link.action>
+</f:section>
